@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+
+    <!-- Ion Icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tekton Joinery</title>
+</head>
+
+<body>
+
+    <header id="home">
+
+        <div class="video-container">
+            <video playsinline autoplay muted loop id="bgvid">
+                <source src="img/background.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="showcase">
+            <div class="showcase-content">
+                <div class="container">
+                    <h1 class="l-heading wow fadeIn" data-wow-delay="0.3s">Tekton Joinery</h1>
+                    <p class="lead wow fadeInRightBig" data-wow-delay="0.4s">London based Joinery Studio, designing and
+                        manufacturing bespoke joinery across the
+                        UK</p>
+                </div>
+            </div>
+        </div>
+
+
+        <nav id="navbar" class="nav">
+            <img src="img/tekton2.png" alt="logo">
+            <ul id="myDIV">
+                <li><a href="#home" class="btnm active">Home</a></li>
+                <li><a href="#about" class="btnm">About</a></li>
+                <li><a href="#products" class="btnm">Products</a></li>
+                <li><a href="#contact" class="btnm">Contact</a></li>
+                <li class="tel">
+                    <ion-icon class="call" name="call" size="small"></ion-icon>
+                    <a href="tel:+44-1923-244571">+44 1923 244571</a>
+                </li>
+            </ul>
+
+            <div class="toggle">
+                <div class="span">menu</div>
+            </div>
+
+        </nav>
+
+        <div id="resize">
+            <div class="close-btn">close</div>
+
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- About Section -->
+
+    <section id="about" class="p-4">
+
+        <div class="container">
+            <div class="container-grid">
+                <div class="container-grid-1">
+                    <h3 class="m-heading wow fadeInUp" data-wow-delay="0.2s">About Us</h3>
+                </div>
+                <div class="container-grid-2">
+                    <h4 class="s-heading wow fadeInUp" data-wow-delay="0.3s">Who We Are</h4>
+                </div>
+                <div class="container-grid-3"></div>
+                <div class="container-grid-4"></div>
+                <div class="container-grid-5"></div>
+                <div class="container-grid-6">
+                    <p class="py-1 alt wow fadeInUp" data-wow-delay="0.5s">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Temporibus sed
+                        dolore quo vero vel! Libero eaque distinctio quod a laudantium nulla voluptatum veritatis. Vel
+                        tempore facilis itaque, incidunt dolores distinctio sequi excepturi cumque veniam aspernatur
+                        atque
+                        perferendis, eius alias recusandae! Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Sapiente cum
+                        assumenda facere neque voluptate velit et?</p>
+                </div>
+                <div class="container-grid-7"></div>
+                <div class="container-grid-8 m-1 wow fadeInUp" data-wow-delay="0.6s"><button id="btn">Learn
+                        More</button></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Products Section -->
+
+    <section id="products">
+
+        <div class="container">
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+        <div class="contact-container">
+
+            <div class="wow fadeInUp" data-wow-delay="0.4s">
+                <h2 class="m-heading">Contact Us</h2>
+            </div>
+            <div class="wow fadeInUp" data-wow-delay="0.5s">
+                <p>Please use the form below to contact us</p>
+            </div>
+
+            <form action="process.php" name="contact-form" id="contact-form" method="POST">
+
+                <ul>
+
+                    <li class="wow fadeInUp" data-wow-delay="0.6s">
+                        <label for="name">Name :</label>
+                        <div class="textarea">
+                            <input type="text" name="name" id="name" value="" required>
+                        </div>
+                    </li>
+
+                    <br>
+
+                    <li class="wow fadeInUp" data-wow-delay="0.7s">
+                        <label for="email">E-mail :</label>
+                        <div class="textarea">
+                            <input type="email" name="email" id="email" value="" required>
+                        </div>
+                    </li>
+
+                    <br>
+
+                    <li class="wow fadeInUp" data-wow-delay="0.8s">
+                        <label for="phone">Phone Number :</label>
+                        <div class="textarea">
+                            <input type="text" name="phone" id="phone" value="">
+                        </div>
+                    </li>
+
+                    <br>
+
+                    <li class="wow fadeInUp" data-wow-delay="0.9s">
+                        <label for="message">Message :</label>
+                        <div class="textarea">
+                            <textarea name="message" id="message" rows="6" required></textarea>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <button type="submit" value="Send" name="submit" id="submit" class="send wow fadeInUp"
+                    data-wow-delay="0.9s">Send Message</button>
+
+            </form>
+        </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer id="footer">
+
+        <div class="container">
+
+            <div class="info">
+
+
+                <div class="wow fadeInUp" data-wow-delay="0.3s" id="address">
+                    <p>Location</p>
+                    <h4>Unit 1B Sandown Road</h4>
+                    <h4>Industrial Estate,</h4>
+                    <h4>WD24 7UB, London</h4>
+                </div>
+
+                <div class="wow fadeInUp" data-wow-delay="0.4s" id="media">
+                    <ul>
+                        <li>
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </li>
+
+                        <li>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="wow fadeInUp" data-wow-delay="0.5s" id="mail">
+                    <p>Contact Us</p>
+                    <h4>
+                        <div class="email">
+                            <span>Email: </span>
+                            <a href="mailto:info@tektonjoinery.co.uk">info@tektonjoinery.co.uk</a>
+                        </div>
+                        <div class="tell">
+                            <span>Tel: </span>
+                            <a href="tel:+44-1923-244571">+44 1923 244571</a>
+                        </div>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btnm");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+
+        // Add class for responsive design
+        $(".toggle").click(function () {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+        });
+        $("#resize ul li a").click(function () {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+        });
+        $(".close-btn").click(function () {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+        });
+
+
+        // scroll function
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".nav");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+
+        new WOW().init();
+
+
+        $('#navbar a').on('click', function (event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 100
+                    },
+                    800
+                );
+            }
+        });
+    </script>
+</body>
+
+</html>

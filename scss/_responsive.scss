@@ -1,0 +1,130 @@
+// header
+@media(max-width: 900px) {
+    .showcase-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        z-index: 3;
+
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 34px !important;
+        text-align: center;
+        padding: 0 !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    p {
+        font-size: 16px !important;
+        text-align: center;
+        padding: 0 !important;
+        margin: 0 !important;
+        line-height: 1.5;
+    }
+}
+
+// navigation
+
+@media(max-width: 900px) {
+    #navbar {
+        & ul {
+            display: none;
+        }
+
+        img {
+            display: block;
+            float: left;
+            margin-left: .9rem;
+        }
+
+        .toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: .5rem;
+            margin-right: .3rem;
+        }
+    }
+
+    #resize ul li a {
+        font-size: 1rem;
+        font-weight: 400 !important;
+        transition: all 500ms ease-out;
+    }
+}
+
+@media(min-width: 900px) {
+    #resize {
+        visibility: hidden !important;
+    }
+}
+
+
+// about
+@media(max-width: 900px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        h4 {
+            display: none;
+        }
+
+        p {
+            text-align: left;
+            padding: 2rem 0 !important;
+        }
+    }
+
+}
+
+
+// contact
+@media(max-width: 900px) {
+    #contact {
+        margin: 5% 0;
+        width: 98%;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 0.4rem;
+            line-height: 1.1;
+        }
+
+        button {
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+
+
+// footer 
+@media(max-width: 900px) {
+    #address {
+        grid-column: 1 / 4;
+        justify-self: center;
+        text-align: center;
+        padding-bottom: 3.9rem;
+    }
+
+    #media {
+        grid-column: 1 / 4;
+        justify-self: center;
+        text-align: center;
+        padding-bottom: 3.9rem;
+    }
+
+    #mail {
+        grid-column: 1 / 4;
+        justify-self: center;
+        text-align: center;
+    }
+}

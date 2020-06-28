@@ -1,0 +1,55 @@
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+
+#contact-form {
+    margin: 5% 0;
+
+    ul {
+        list-style: none;
+        margin-bottom: 40px;
+        border-radius: 0;
+    }
+
+    li:last-of-type {
+        border-bottom: none;
+    }
+
+    label {
+        display: block;
+        font-size: 20px;
+        color: rgb(97, 97, 97);
+        font-weight: 300;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        resize: vertical;
+        background: transparent;
+        color: #101010;
+        font-weight: 400;
+
+        &:focus {
+            outline: none !important;
+            border: none !important;
+        }
+    }
+
+}
+
+.contact .icon-title {
+    margin-top: 10px;
+    color: #000;
+}
+
+
+.textarea {
+    border-bottom: 1px solid #c9c9c9;
+}
